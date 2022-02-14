@@ -60,26 +60,6 @@ def peice_process():
                 print("SELECT ANOTHER 1")
                 peice_process()
 
-def peice_ruleout0():
-    interface()
-    global main
-    if main[c.index(main[4])][main[6]-1] == 0 or main[c.index(main[4])][main[6]-1] ==8 or main[c.index(main[4])][main[6]-1] ==13 or main[c.index(main[4])][main[6]-1] ==21 or main[c.index(main[4])][main[6]-1] ==26 or main[c.index(main[4])][main[6]-1] ==34 or main[c.index(main[4])][main[6]-1] ==39 or main[c.index(main[4])][main[6]-1] ==47 or main[c.index(main[4])][main[6]-1] > 50:
-        print("YOU'RE ON STAR")
-    else:
-        for x in range(4):
-            for y in range(4):
-                if (main[c.index(main[4])][main[6] - 1] - 13 * x) == main[x][y]:
-                    print(c.index(main[4]),x)
-                    if c.index(main[4]!=x):
-                        main[x][y] = None
-                        dice()
-                else:
-                    continue
-        if main[5] == 6:
-            dice()
-        else:
-            turn()
-
 def peice_ruleout():
     interface()
     global main
