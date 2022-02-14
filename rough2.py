@@ -30,8 +30,6 @@ def turn():
         else:
             main[4]=c[c.index(main[4])+1]
 
-
-    #os.system('cls')
     dice()
 def peice_process():
     interface()
